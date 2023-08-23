@@ -1,98 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>meetzack</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/style.production.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="shortcut icon" href="img/favicon.png">
-</head>
-<body>
-        <header class="page-header">
-            <img src="img/mylogo.png" class="navigation_logo" alt="official logo">
-            <nav class="page-header_item">
-                <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list_item">Home</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>David McIntyre</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="img/favicon.png">
+      </head>
+      <body>
+           <!-- Navbar -->
+           <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand text-sm" href="https://github.com/abuyusr"> Zakaria Abdi | Web Developer</a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
                     </li>
-                    <li role="presentation">
-                        <a href="about.html" role="menuitem" class="navigation-list_item">About</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
                     </li>
-                    <li role="presentation">
-                        <a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./work.html">Projects</a>
                     </li>
-                    <li role="presentation">
-                        <a  href="work.html" role="menuitem" class="navigation-list_item">Work</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
                     </li>
                 </ul>
-            </nav>
-        </header>
-        <main class="page-main">
-            <h1 class="main-title">About Me</h1>
-                <img class="profile-picture" src="img/mypicture.webp" alt="profile picture">
-                <h1>Hello World</h1>
-                 <div class="intro">
-                    <p> My name is Zakaria Abdi,I am a <span>web</span> Developer from US.</p>
-                    <p>If you want to know more about this page is right place to be.</p>
-                    <p>Below are my hobbies</p>
-                 </div>
-                   
-                
-                <ul>
-                    <li>Soccer</li>
-                    <li>Swimming</li>
-                    <li>Reading</li>
-                </ul>
-                <p>If you want to know more about me , please click below link</p>
-                <a href="#">check out some of my code</a>
-                <hr>
-                <div>
-                    <h3 class="projects-heading">My Projects</h3>
-                </div>
-                <div class="projects-grid">
-                    <div class="project-image-wrapper">
-                    <img class="project-image" src="img/project-1.jpg"/>
-                    <h4>project 1</h4>
-                    </div>
-                    <div class="project-image-wrapper">
-                    <img class="project-image" src="img/project-2.jpg"/>
-                    <h4>project 2</h4>
-                    </div>
-                    <img class="mytown" src="img/washington-monument-svgrepo-com.svg">
-             </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Skills</th>
-                        <th>Years of Experience</th>
-                        <th>Level of Expertise</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>HTML</td>
-                        <td>3</td>
-                        <td>Advanced</td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                        <td>2</td>
-                        <td>Intermediate</td>
-                    </tr>
-                    <tr>
-                        <td>Java</td>
-                        <td>1</td>
-                        <td>Beginer</td>
-                    </tr>
-                </tbody>
-            </table>
-        </main>
+            </div>
+        </nav>
+   <!-- About Page -->
+   <main class="container mt-5 mb-0 custom-container">
+    <h2 class="text-center">About Me</h2>
+    <div class="row mt-4">
+        <div class="col-sm-8 col-md-4">
+        <p class="text-muted">"Every great developer you know got there by solving problems they were unqualified to solve until they actually did it."</p>
+        <p>- Patrick McKenzie</p>
+        </div>
+        <div class="col-sm-8 col-md-4">
+            <p>I have been working in the mental health industry for the last 4 years and now I am going to turn into my dream career which is Web Development.</p>
+        </div>
+        <div class="col-sm-8 col-md-4">
+            <p>Now with a strong foundation in HTML, CSS, Javascript, MongoDB, Express.js, React.js and Node.js I believe I now have the skills to have a successful career in the field of Web Development.</p>
+        </div>
+    </div>
+        <h6 class="text-center m-3 text-muted">Technologies that I am familiar with:</h6>
+    <div class="row m-1 mt-4 icon-container">
+        <div class="col-6 col-sm-4 col-md-2">
+            <a href="https://www.w3schools.com/html/" target="_blank"><img src="img/icons/html-1.svg" class="img-fluid icon-item" alt="HTML icon"></a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+            <a href="https://www.w3schools.com/css/" target="_blank"><img src="img/icons/css-3.svg" class="img-fluid icon-item" alt="CSS icon"></a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+            <a href="https://www.javascript.com/" target="_blank"><img src="img/icons/javascript-1.svg" class="img-fluid icon-item" alt="JavaScript icon"></a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+            <a href="https://angular.io/" target="_blank"><img src="img/icons/angular.png" class="img-fluid icon-item" alt="Angular icon"></a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+            <a href="https://www.postgresql.org/" target="_blank"><img src="img/icons/PostgreSQL_logo.3colors.svg" class="img-fluid icon-item" alt="PostgreSQL icon"></a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+            <a href="https://www.mongodb.com/" target="_blank"><img src="img/icons/mongodb-icon-1.svg" class="img-fluid icon-item" alt="MongoDB icon"></a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+            <a href="https://expressjs.com/" target="_blank"><img src="img/icons/express-109.svg" class="img-fluid icon-item express" alt="Express icon"></a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+            <a href="https://react.dev/" target="_blank"><img src="img/icons/react-2.svg" class="img-fluid icon-item" alt="React icon"></a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+            <a href="https://nodejs.org/en" target="_blank"><img src="img/icons/nodejs-2.svg" class="img-fluid icon-item" alt="Node icon"></a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+            <a href="https://github.com/" target="_blank"><img src="img/icons/github-icon-1.svg" class="img-fluid icon-item" alt="Github icon"></a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+            <a href="https://code.visualstudio.com/" target="_blank"><img src="img/icons/visual-studio-code-1.svg" class="img-fluid icon-item" alt="VS Code icon"></a>
+        </div>
+    </div>
+  </main>
     
         <footer class="page-footer">
             <div class="site-footer">
@@ -105,6 +99,7 @@
                 <img src="img/twitter_icon.svg" alt="Twitter"></a>
             </div>
         </footer>
-        <script src="js/tota11y.min.js"></script>
-</body>
-</html>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ </body>
+ </html>

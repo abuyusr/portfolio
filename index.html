@@ -1,48 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>welcome</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/style.production.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="shortcut icon" href="img/favicon.png">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zakaria Abdi</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="shortcut icon" href="img/favicon.png">
+      </head>
 <body>
-    <header class="page-header">
-        <img src="img/mylogo.png" class="navigation_logo" alt="official logo">
-        <nav class="page-header_item">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem" class="navigation-list_item">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list_item">About</a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
-                </li>
-                <li role="presentation">
-                    <a  href="work.html" role="menuitem" class="navigation-list_item">Work</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-            <h1 class="main-title">Home</h1>
-            <img class="web-ad" src="img/web ads.png" alt="web ad">
-            <img class="services" src="img/our service.png" alt="our services">
-        <div>
-            <a href="#">Default Link</a>
-            <button type="button">Default Button</button>
-            <button class="button_secondary">Secondary Button</button>
+    <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand text-sm" href="https://github.com/abuyusr">Zakaria Abdi | Web Developer</a>
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./work.html">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+        </ul>
+      </div>
+      </nav>
+   <!-- Home Section -->
+
+  <main class="container">
+    <div class="text-center">
+       <div class="row">
+        <div class="col-md-6 m-1">
+          <img src="img/profile-photo.jpg" alt="Profile Picture" class="img-fluid w-75 profile-image">
         </div>
-    </main>
+          <div class="col-md-5 m-1 mb-2">
+              <h1 class="p-2 home-text">Hi! I'm Zakaria</h1>
+              <p class="mt-1">I am a Full Stack Web Developer. <br>
+                I like to use an analytical mindset and creativity to design responsive apps from start to finish. <br>
+                I am looking for a topic that will keep me learning and solving puzzles daily. <br>
+                I thrive in collaborative environments where I can contribute my skills and learn from experienced professionals.
+              </p>
+                <div class="btn-container">
+                  <a href="files/Abdi Resume.pdf" class="btn btn-dark" download>Download My CV</a><span> or </span> 
+                <a href="mailto:abdizm@outlook.com" class="btn btn-dark text">Send Me an Email</a> 
+                </div>
+          </div>
+      </div>
+    </div>
+    
+</main>
     <footer class="page-footer">
         <div class="site-footer">
             <p>Follow on me </p>
@@ -55,6 +71,8 @@
         </div>
     </footer>
        
-    <script src="js/tota11y.min.js"></script>
+    <!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-</html>
+</html>l>
