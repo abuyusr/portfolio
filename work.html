@@ -2,84 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/style.production.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <title>Zakaria Abdi</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="img/favicon.png">
 </head>
 <body>
-    <header class="page-header">
-        <img src="img/mylogo.png" class="navigation_logo" alt="official logo">
-        <nav class="page-header_item">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem" class="navigation-list_item">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list_item">About</a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
-                </li>
-                <li role="presentation">
-                    <a  href="work.html" role="menuitem" class="navigation-list_item">Work</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main class="page-main">
-       <section>
-            <h1 class="main-title">Work</h1>
-            <div class="grid">
-                <div class="grid_item">
-                    <h2>Mobile Web app</h2>
-                    <p>
-                        Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the HTML and CSS templates.
-                    </p>
-                    <a href="#">See a project on Github</a>
-                </div>
-                <div class="grid_item">
-                    <h2>Software Engineer</h2>
-                    <p>
-                        Within this project, I was responsible for the entire project. It is  written in Python. Additionally, I've created sample templates.
-                    </p>
-                    <a href="#">See a project on Github</a>
-                </div>
-                <div class="grid_item">
-                    <h2> HTML Page </h2>
-                    <p>
-                        Within this project, I was intership. It is created in Visual Studio code . Additionally, I've created extra pages for  templates.
-                    </p>
-                    <a href="#">See a project on Github</a>
-                </div>
-                <div class="grid_item">
-                    <h2> CSS Styles </h2>
-                    <p>
-                        Within this project, I was supervisor for the implementing. It is written in Sublime Text . Additionally, if you want to learn more about this project check the attached  templates.
-                    </p>
-                    <a href="#">See a project on Github</a>
-                </div>
-
-            </div>
-        </section>
-    </main>    
-    <footer class="page-footer">
-        <div class="site-footer">
-            <p>Follow on me </p>
-            <a href="https://abuyusr.github.io/abdi/" target="https://abuyusr.github.io/abdi/">
-            <img src="img/github.svg" alt="Github"></a>
-            <a href="https://www.linkedin.com/in/zakaria-abdi-03414725b" target="https://www.linkedin.com/in/zakaria-abdi-03414725b/">
-            <img src="img/linkedin_icon.svg" alt="linkedin"></a>
-            <a href="https://twitter.com/Zackhab" target="https://twitter.com/home">
-            <img src="img/twitter_icon.svg" alt="Twitter"></a>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand text-sm" href="https://github.com/abuyusr">Zakaria Abdi | Web Developer</a>
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./work.html">Projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+        </li>
+    </ul>
+    </div>
+</nav>
+   <section>
+        <div class="heading">
+            <h1>Projects Experience</h1>
         </div>
-    </footer>
-    <script src="js/tota11y.min.js"></script>
+        <div class="grid">
+            <!-- Grid items will live here -->
+            <div class="grid__item">
+                <h2>Angular myFlix Movie App</h2>
+                <img src="img/myFlix_angular.png" alt="Angular myFlix App image" class="thumbnail">
+                <p>
+                    This project was built with Angular using TypeScript. It is a movie app that allows users to
+                    register an account and view a list of movies. Users can also view information about a movie and
+                    add or remove movies from their list of favorites. Built on top of the existing server-side code
+                    from the myFlix project.
+                </p>
+                <a href="https://abuyusr.github.io/myFlix-Angular-client/">Angular myFlix App</a>
+            </div>
+            <div class="grid__item">
+                <h2>City Crawler Meet App</h2>
+                <img src="img/meet_app.png" alt="Meet App image" class="thumbnail">
+                <p>
+                    A project that utilized Test Driven Development to create a serverless, progressive web application.
+                    This project was created to help people discover
+                    Coding Events in their city. It uses the Google Calendar API to fetch upcoming events. It also
+                    displays a chart with the number of upcoming events in each city and allows users to filter events
+                    by city.
+                </p>
+                <a href="https://abuyusr.github.io/meet-app/">Meet App</a>
+            </div>
+             <div class="grid__item">
+                <h2>MyFlix-Reloaded Movie Website</h2>
+                <img src="img/movie_app.png" alt="Meet App image" class="thumbnail">
+                <p>
+                    MyFlix-Reloaded is a full-stack web application that allows users to register an account and view a
+                    list of movies. Users can also view information about a movie and add or remove movies from their
+                    list of favorites.
+                    This project was created using React, Redux, Node.js, Express, and MongoDB.
+                </p>
+                <a href="https://zaflix.netlify.app/">MyFlix Movie Website</a>
+            </div>
+             <div class="grid__item">
+                <h2>Pokedex</h2>
+                <img src="img/pokemon_app.png" alt="Pokedex image" class="thumbnail">
+                <p>
+                    A Javascript project that uses the PokeAPI to display information about Pokemon. It makes use of the
+                    fetch API to make requests to the PokeAPI. It also uses the async/await syntax to handle promises.
+                </p>
+                <a href="https://abuyusr.github.io/za-repo/">JS Pokedex</a>
+            </div>
+            <div class="grid__item">
+                <h2>React Native Chat App</h2>
+                <img src="img/chat-app.png" alt="Chat image" class="thumbnail">
+                <p>
+                    This project is a chat application built with React Native and Firebase. 
+                        It includes features such as user authentication, real-time messaging, image sharing, and location sharing. 
+                        The application allows users to sign in anonymously, choose a username and background color, and engage in real-time chat conversations.
+                </p>
+                <a href="https://github.com/abuyusr/chat-app.git">JS Pokedex</a>
+            </div>
+        </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

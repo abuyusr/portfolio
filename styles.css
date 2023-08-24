@@ -10,6 +10,18 @@
     border: none;
 }
 
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  /* Sets the body font size to 16px */
+  line-height: 1.6;
+  /* specifies the height of a line of text */
+  position: relative;
+  padding-bottom: 95px;
+  min-height: 100vh;
+}
+
 a, h1, h2, h3, h4, h5, h6, p, button {
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -19,8 +31,42 @@ h1 {
 }
 
 p {
-  font-weight: 400;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
+
+button, .button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color:#e2e2e2;
+  /* the text color should change to white but it doesn't change unless I add !important */ 
+  color: white !important;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  border-bottom: 2px solid rgba(0,0,0,0.3);
+  transition: 0.5s opacity;
+}
+
+button:hover, 
+button:focus 
+.button:hover,
+.button:focus {
+  /* this lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* this reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+
+.button_secondary {
+  background-color:rgb(165, 115, 115)
+  
+}
+
 
 .home-text {
   margin-top: 35%;
@@ -75,26 +121,64 @@ p {
 
 a, a:hover {
   text-decoration: none;
-  color: #fff;
+  color: #861414;
 }
 
-.page-footer {
-  background-color: #567461;
-  display: flex;
- width: 100%;
- padding: 20px;
- margin-top:-100px;
- height: -1000px;
- position: absolute;
- bottom: 0;
-
-}
-.site-footer{
-  display:inline-block;
-  justify-content:center;
-  align-items: center;
+.connect, .connect:hover {
+  color: #000;
   text-align: center;
-  margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+.div {
+  display: block;
+}
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-end;
+  margin-top: auto;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* start of the grid fallback */
+.grid__item {
+  display: inline-block;
+  width: 33%;
+}
+/*end of the grid fallback */ 
+
+@supports (display: grid) {
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0px;
+  margin: 0 auto;
+}
+
+.grid__item {
+  background-color:#e2e2e2;
+  width: auto;
+  min-height: auto;
+  margin: 20px;
+  padding: 20px;
+}
+
+.grid__item:last-child {
+  grid-column: 3 / 3;
+}
+}
+
+/* Image Resize */
+.thumbnail {
+  width: 400px;
+  height: auto;
 }
 
 
