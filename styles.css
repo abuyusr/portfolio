@@ -20,6 +20,10 @@ body {
   position: relative;
   padding-bottom: 95px;
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+
 }
 
 a, h1, h2, h3, h4, h5, h6, p, button {
@@ -30,12 +34,23 @@ h1 {
   font-weight: 600;
 }
 
+h1 {
+  font-weight: 600;
+}
+
+h5 {
+  text-align: center;
+}
+
+
 p {
   display: block;
-  margin-block-start: 1em;
+  margin-block-start: 5em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  font-weight: 400;
+  text-align: center;
 }
 
 button, .button {
@@ -105,8 +120,9 @@ button:focus
 }
 
 .img {
-  max-width: 65%;
-  margin: 20% 0 0 2%;
+  max-width: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .social-container {
@@ -132,9 +148,11 @@ a, a:hover {
 * {
   box-sizing: border-box;
 }
+
 .div {
   display: block;
 }
+
 .page-footer {
   clear: both;
   display: flex;
