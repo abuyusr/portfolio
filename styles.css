@@ -106,41 +106,47 @@ button:focus
 }
 
 .chat-img{
-    max-width: 24%;
+  max-width: 24%;
 }
 
 .case-img {
-  max-width: 140%;
-  margin-top: 8em;
-  margin-bottom: 9em;
+max-width: 103%;
+margin-top: 2em;
 }
 
-.Firebase {
-  max-width: 140%;
-  margin-top: 29%;
+.case-img1 {
+  max-width: 132%;
+  margin-top: 8em;
+  }
+
+.postman-img {
+max-width: 133%;
+margin-top: 7%;
+}
+
+.icon {
+max-width: 100%;
 }
 
 .express {
-  position: relative;
-  top: 30%;
+position: relative;
+top: 30%;
 }
 
 .img {
-  max-width: 50px;
-  margin-left: 5px;
-  margin-right: 5px;
+max-width: 50px;
+margin-left: 5px;
+margin-right: 5px;
 }
 
 .social-container {
-  margin: 5%;
-  text-align: center;
+text-align: center;
 }
 
 .case-study {
-  padding-left: 12%;
-  padding-right: 12%;
+padding-left: 12%;
+padding-right: 12%;
 }
-
 a, a:hover {
   text-decoration: none;
   color: #f8f3f3;
